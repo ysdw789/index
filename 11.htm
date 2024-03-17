@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机密码生成器</title>
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- 字体库 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
+    <!-- 主要样式 -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="container">
+    <header>
+        <h2 class="title">密码生成器</h2>
+    </header>
+    <section class="result">
+        <div class="result__title field-title">生成的密码</div>
+        <div class="result__info right" aria-label="点击复制提示">点击复制</div>
+        <div class="result__info left" aria-label="复制提示">复制</div>
+        <div class="result__viewbox" id="result" aria-label="生成结果">点击生成</div>
+        <button id="copy-btn" title="复制到剪贴板"><i class="far fa-copy"></i></button>
+    </section>
+    <section class="length range__slider" data-min="4" data-max="32">
+        <div class="length__title field-title" data-length='0'>长度：</div>
+        <input id="slider" type="range" min="4" max="32" value="16" aria-label="密码长度"/>
+    </section>
+    <section class="settings">
+        <span class="settings__title field-title">设置</span>
+        <div class="setting">
+            <input type="checkbox" id="uppercase" checked aria-label="包含大写"/>
+            <label for="uppercase">包含大写</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="lowercase" checked aria-label="包含小写"/>
+            <label for="lowercase">包含小写</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="number" checked aria-label="包括数字"/>
+            <label for="number">包括数字</label>
+        </div>
+        <div class="setting">
+            <input type="checkbox" id="symbol" aria-label="包括符号"/>
+            <label for="symbol">包括符号</label>
+        </div>
+    </section>
+    <footer>
+        <button class="btn generate" id="generate" aria-label="生成密码">生成密码</button>
+    </footer>
+</main>
+
+<script src="css/script.js"></script>
+</body>
+</html>
