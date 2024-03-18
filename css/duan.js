@@ -5,7 +5,7 @@ https://pojie.tengxunl.top
 
 window.addEventListener('load', function () {
     var vpnIPs = ['1.1.1.1','2.2.5.2'];
-    var currentIP = '127.0.0.1';
+    var currentIP = '';
 
     function checkIP() {
         var script = document.createElement('script');
