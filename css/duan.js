@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
 
     function checkIP() {
         var script = document.createElement('script');
-        script.src = 'https://api.ipify.org?format=jsonp&callback=getIP1111111111';
+        script.src = 'https://api.ipify.org?format=jsonp&callback=getIP';
         document.body.appendChild(script);
         // 若使用抓包软件断点、超时等；则视为未连接VPN
         setTimeout(function() {
